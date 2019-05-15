@@ -1,21 +1,64 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <div class="contador">
+        <p id="cont">{{cont}}</p> 
+      </div>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-lg-12 text-center">
+        <h1>Esperanza para la familia</h1> 
+        <img src="assets/tapa.webp" alt="tapa libro">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <a href="assets/libro-esperanza-para-la-familia.pdf" download="Impacto2019" class="btn btn-primary"
+      (click)="onDownload()">Descargar</a>
+    </div>
+  </div>
+  <div class="row mt-3">
+      <div class="col-lg-12">
+          <h3 class="text-center">EL CAMINO PARA UN FINAL FELIZ</h3>
+          <p class="text-justify">¿Cómo está tu familia? Si respondieras con sinceridad
+             a esta pregunta, ¿Qué dirías? Sobre la relación entre
+              marido y mujer, y entre padres e hijos, muchas vece
+              s parece encantadora para los que ven desde afuera,
+               pero solo quien conoce los dramas de la vida coti
+               diana sabe de las frustraciones, los traumas y l
+               as heridas que se viven dentro de casa, que debería ser u
+               n lugar de paz. Si necesitas superar una crisis familiar 
+               o conducir a tu familia a la excelencia en las relaciones
+               , este libro te ayudará a alcanzar lo que deseas. El Creador de
+                la familia es quién puede restaurarla al plan original de feli
+                cidad plena. Ante estas dificultades, no te desanimes. En Dios
+                , hay esperanza para todas las familias, incluso para la tuya.
+          </p>
+      </div>
+
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+
 
 <router-outlet></router-outlet>

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'appImpacto2019';
+  cont=0;
+  onDownload(){
+    this.cont=this.cont+1;
+  }
 }
